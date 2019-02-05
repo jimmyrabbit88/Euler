@@ -1,12 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
-import java.math.BigInteger;
 
 public class Display {
     public static void main(String[] args) {
         //findSomeOfDivisibleByTwo(1000, 3,5);
         //sumOfEvenFibbNumbersUnderN(4000000);
-        largestPrimeFactor(600851475143L);
+        //largestPrimeFactor(600851475143L);
     }
 
     //find the sum of all oaitive integers below n that are evenly devisible by a and b
@@ -69,5 +68,22 @@ public class Display {
             }
         }
         return prime;
+    }
+
+    public static void LPN(){
+        int highest = 0;
+        for(int i = 999; i>0; i--){
+            for(int j = i; j>0; j--){
+                int mul = i*j;
+                if(isPalin(mul)){
+                    highest = mul;
+                }
+            }
+        }
+    }
+
+    public static Boolean isPalin(int num){
+        String str = num;
+        System.out.println();
     }
 }
